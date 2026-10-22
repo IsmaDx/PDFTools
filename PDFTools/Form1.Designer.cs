@@ -34,12 +34,13 @@
             archivoToolStripMenuItem = new ToolStripMenuItem();
             configuracionesToolStripMenuItem = new ToolStripMenuItem();
             acercaDeToolStripMenuItem = new ToolStripMenuItem();
+            button3 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(277, 154);
+            button1.Location = new Point(181, 153);
             button1.Name = "button1";
             button1.Size = new Size(90, 95);
             button1.TabIndex = 0;
@@ -49,7 +50,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(391, 154);
+            button2.Location = new Point(295, 153);
             button2.Name = "button2";
             button2.Size = new Size(97, 95);
             button2.TabIndex = 1;
@@ -76,22 +77,33 @@
             // configuracionesToolStripMenuItem
             // 
             configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
-            configuracionesToolStripMenuItem.Size = new Size(180, 22);
+            configuracionesToolStripMenuItem.Size = new Size(161, 22);
             configuracionesToolStripMenuItem.Text = "Configuraciones";
             configuracionesToolStripMenuItem.Click += configuracionesToolStripMenuItem_Click;
             // 
             // acercaDeToolStripMenuItem
             // 
             acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(180, 22);
+            acercaDeToolStripMenuItem.Size = new Size(161, 22);
             acercaDeToolStripMenuItem.Text = "Acerca de";
             acercaDeToolStripMenuItem.Click += acercaDeToolStripMenuItem_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(421, 153);
+            button3.Name = "button3";
+            button3.Size = new Size(97, 95);
+            button3.TabIndex = 3;
+            button3.Text = "+OVERLAY+";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(menuStrip1);
@@ -113,5 +125,6 @@
         private ToolStripMenuItem archivoToolStripMenuItem;
         private ToolStripMenuItem configuracionesToolStripMenuItem;
         private ToolStripMenuItem acercaDeToolStripMenuItem;
+        private Button button3;
     }
 }
