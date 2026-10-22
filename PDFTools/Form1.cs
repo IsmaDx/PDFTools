@@ -53,5 +53,12 @@ namespace PDFTools
         {
             MessageBox.Show("\t\t\tPDFTools V1.0.0\n\nPDFTools es una solucion gratuita para la manipulacion basica de PDF\nLos PDF son procesados de manera local por lo que no se envian/guardan en un servidor remoto\n\nDesarrollado por: RCMX-2026");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OverlayPDF overlayPDF = new OverlayPDF();
+            overlayPDF.Show();
+            this.Hide();
+        }
     }
 }
